@@ -1,0 +1,108 @@
+.profileCard{
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    background-color: var(--cardColor);
+    overflow-x: clip;
+    width: 18rem;
+}
+.profileCard .profileImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.profileImages>img:nth-of-type(1){
+    width: 100%;
+    background:center no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.profileImages .profile-Img {
+    position: absolute;
+    bottom: -3rem;
+    border-radius: 50%;
+}
+.profile-Img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background:center no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+.profileCard .profileName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 5px;
+}
+.profileName>span:nth-of-type(1){
+    font-weight: bold;
+    font-size: 18px;
+}
+.profileName>span:nth-of-type(2){
+    font-size: 14px;
+}
+.profileCard .followStatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 20px;
+}
+.followStatus > hr{
+    width: 85%;
+    border: 1px solid var(--hrColor);
+}
+.followStatus > div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.followStatus .follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+.follow>span:nth-of-type(1){
+    font-weight: bold;
+}
+.follow > span:nth-of-type(2) {
+    color: var(--gray);
+    font-size: 13px;
+  }
+  
+.vertical-line{
+    height: 120%;
+    border-left: 2px solid var(--hrColor);
+}
+.profileCard .my-profile{
+    font-weight: bold;
+    cursor: pointer;
+    color: orange;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.profile-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-self: flex-end;
+}
+.profile-btn button{
+    padding: 0.8rem;
+}

@@ -1,0 +1,58 @@
+.postShare{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--cardColor);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.postShare>img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background: cover no-repeat contain;
+}
+.postShare>div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+}
+.postShare>div>input{
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--inputColor);
+    font-size: 17px;
+}
+.postShare .postOptions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.postOptions .option{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.postOptions .ps-btn{
+    padding: 8px 20px 8px 20px;
+    font-size: 14px;
+}
+.privewImage{
+    position: relative;
+}
+.privewImage>svg{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.privewImage>img{
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,38 @@
+.RightSide{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.navIcons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.navIcons>img{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.navIcons>svg{
+    cursor: pointer;
+}
+.tr-btn{
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+}
+
+
+@media only screen and (max-width:766px) {
+    .navIcons{
+        background-color: #fff;
+        backdrop-filter: blur(30px);
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        align-self: center;
+        padding: 12px;
+    }
+}

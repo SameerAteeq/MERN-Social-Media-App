@@ -1,0 +1,28 @@
+.home{
+    position: relative;
+    display: grid;
+    grid-template-columns: 18rem auto 20rem;
+    gap: 1rem;
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+    .home {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      padding-bottom: 3rem;
+    
+    }
+  }
+  
+  /* For screens larger than 768px */
+  @media only screen and (min-width: 768px) {
+    .home {
+      grid-template-columns: 18rem auto 20rem;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "header header header"
+        "sidebar main main";
+    }
+  }
+  

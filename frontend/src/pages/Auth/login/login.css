@@ -1,0 +1,53 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    width: 24rem;
+    
+}
+.login>h1{
+    text-align: center;
+}
+.login>p{
+    color: var(--gray);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login input{
+    padding: 1rem;
+    background-color: var(--inputColor);
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    width: 100%;
+}
+.login button{
+    padding: 10px 12px 10px 12px;
+    align-self: center;
+    width: 50%;
+}
+.login .links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.links>span:nth-of-type(1){
+    font-size: 14px;
+    color: var(--gray);
+}
+.links>span:nth-of-type(2){
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--orange);
+}
